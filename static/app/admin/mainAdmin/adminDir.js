@@ -2,7 +2,9 @@ import angular from "angular";
 import $ from 'jquery';
 import {app} from '../../app.js';;
 import  '../../mainCtrl.js';
-import admin_template from './template/adminDir.html'
+import admin_template from './template/adminDir.html';
+
+
 app.directive('adminDir', function(){
 	return{
 		restrict: 'E',
