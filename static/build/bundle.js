@@ -55,13 +55,13 @@ var bundle =
 
 	var _mainCtrl2 = _interopRequireDefault(_mainCtrl);
 
-	var _Dir = __webpack_require__(6);
+	var _frontEndDir = __webpack_require__(6);
 
-	var _Dir2 = _interopRequireDefault(_Dir);
+	var _frontEndDir2 = _interopRequireDefault(_frontEndDir);
 
-	var _dir = __webpack_require__(7);
+	var _adminDir = __webpack_require__(7);
 
-	var _dir2 = _interopRequireDefault(_dir);
+	var _adminDir2 = _interopRequireDefault(_adminDir);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42142,7 +42142,8 @@ var bundle =
 		return {
 			restrict: 'E',
 			replase: false,
-			templateUrl: './static/app/front-end/dir/template/fe-Dir.html',
+			controller: 'mainCtrl',
+			templateUrl: './static/app/front-end/mainFront-End/template/fe-Dir.html',
 			link: function link(scope, element, attributes) {
 				scope.fe = function () {
 					console.log(' front-end work');
@@ -42169,13 +42170,20 @@ var bundle =
 
 	__webpack_require__(5);
 
+	var _adminDir = __webpack_require__(8);
+
+	var _adminDir2 = _interopRequireDefault(_adminDir);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	;
 
 	_app.app.directive('adminDir', function () {
 		return {
 			restrict: 'E',
 			replase: false,
-			templateUrl: './static/app/admin/dir/template/adminDir.html',
+			controller: 'mainCtrl',
+			template: _adminDir2.default,
 			link: function link(scope, element, attributes) {
 				scope.admin = function () {
 					console.log('admin work');
@@ -42183,6 +42191,12 @@ var bundle =
 			}
 		};
 		});
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1>hello{{admin()}}</h1>";
 
 /***/ }
 /******/ ]);
